@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "clean": "rm -rf dist",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lint:css": "stylelint '**/*.vue' '**/*.scss' --syntax scss --fix"
+    "lint:css": "stylelint '**/*.vue' '**/*.scss' --syntax scss --fix",
+    "deploy": "npm run clean && npm run build"
   },
   "dependencies": {
     "core-js": "^2.6.5",
