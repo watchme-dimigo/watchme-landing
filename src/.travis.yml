@@ -13,3 +13,4 @@ deploy:
   local_dir: dist
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
+  all_branches: true
