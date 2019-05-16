@@ -2,19 +2,20 @@
   user-select: none;
 }
 
-h1, p {
+h1,
+p {
   margin: 0;
 }
 
 .button {
   display: inline-block;
-  padding: 0.5em;
-  border: 1.5px solid black;
-  border-radius: 8px;
   width: 150px;
-  text-align: center;
+  padding: 0.5em;
+  border: 1.5px solid #000;
+  border-radius: 8px;
   // margin-right: 0.5em;
   cursor: pointer;
+  text-align: center;
   user-select: none;
 
   &__text {
@@ -23,6 +24,6 @@ h1, p {
 }
 
 .button.selected {
-  color: white;
-  background-color: black;
+  background-color: #000;
+  color: #fff;
 }

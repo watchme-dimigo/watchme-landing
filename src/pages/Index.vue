@@ -56,12 +56,12 @@ export default {
   margin-top: 4em;
 
   &__title {
-    color: black;
+    color: #000;
     font-size: 4.2em;
     font-weight: bold;
     line-height: 1;
     padding-bottom: 0.2em;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #000;
     width: 800px;
   }
 
