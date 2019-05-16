@@ -63,18 +63,18 @@ export default {
     padding-bottom: 0.2em;
     border-bottom: 2px solid #000;
     width: 800px;
+    font-family: 'Montserrat', sans-serif;
   }
 
   &__desc {
     font-size: 1.5em;
     margin-top: 0.5em;
-    margin-bottom: 0.3em;
+    margin-bottom: 3.3em;
   }
 }
 
 .buttons {
-  width: 40%; // crash under width 1120px
-  margin-top: 3em;
+  width: 40%; // crashes under width 1120px
   font-size: 1.5em;
 
   &__desc-strong {
