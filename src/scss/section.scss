@@ -1,0 +1,28 @@
+.section * {
+  user-select: none;
+}
+
+h1, p {
+  margin: 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5em;
+  border: 1.5px solid black;
+  border-radius: 8px;
+  width: 150px;
+  text-align: center;
+  // margin-right: 0.5em;
+  cursor: pointer;
+  user-select: none;
+
+  &__text {
+    vertical-align: middle;
+  }
+}
+
+.button.selected {
+  color: white;
+  background-color: black;
+}
