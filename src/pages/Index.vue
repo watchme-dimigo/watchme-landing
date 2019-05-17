@@ -64,31 +64,43 @@ export default {
   position: relative;
   margin-left: 2.5em;
   margin-top: 4em;
-}
 
-.header {
-  &__title {
-    color: #000;
-    font-size: 4.2em;
-    font-weight: bold;
-    line-height: 1;
-    padding-bottom: 0.2em;
-    border-bottom: 2px solid #000;
-    width: 800px;
-    font-family: 'Montserrat', sans-serif;
-  }
-
-  &__desc {
-    font-size: 1.5em;
-    margin-top: 0.5em;
+  @media (max-width: 720px) {
+    margin-left: 0.5em;
   }
 }
 
 .buttons {
   position: absolute;
   bottom: 5em;
-  width: 40%; // crashes under width 1120px
+  width: 40%; // crashes under width 1390px
   font-size: 1.5em;
+
+  @media (max-width: 1390px) {
+    width: 50%;
+  }
+
+  @media (max-width: 1120px) {
+    width: 60%;
+  }
+
+  @media (max-width: 940px) {
+    width: 70%;
+  }
+
+  @media (max-width: 820px) {
+    width: 80%;
+  }
+
+  @media (max-width: 720px) {
+    width: 90%;
+    font-size: 1.3em;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+    margin-left: 0.5em;
+  }
 
   &__desc-strong {
     font-weight: 400;
@@ -109,6 +121,14 @@ export default {
 .button {
   font-size: 1.5rem;
   width: 45%;
+
+  @media (max-width: 600px) {
+    margin: auto;
+    margin-bottom: 0.2em;
+    width: 200px !important;
+    float: unset !important;
+    font-size: 1.2rem;
+  }
 }
 
 .button.download-windows {

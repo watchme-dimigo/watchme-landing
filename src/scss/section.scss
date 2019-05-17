@@ -1,10 +1,11 @@
-.section, .content {
+.section,
+.content {
   height: 100%;
 }
 
 .section * {
-  user-select: none;
   -webkit-user-drag: none;
+  user-select: none;
 }
 
 h1,
@@ -12,12 +13,42 @@ p {
   margin: 0;
 }
 
+.header {
+  &__title {
+    width: 800px;
+    padding-bottom: 0.2em;
+    border-bottom: 2px solid #000;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4.2em;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  &__desc {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+  }
+
+  @media (max-width: 500px) {
+    &__title {
+      margin-left: 0.3rem;
+      font-size: 3em;
+    }
+
+    &__desc {
+      margin-left: 0.3rem;
+      font-size: 1.2em;
+    }
+  }
+}
+
 .button {
   display: flex;
-  align-items: center;
-  justify-content: center;
 
   width: 150px;
+  align-items: center;
+  justify-content: center;
   padding: 0.5em;
   border: 1.5px solid #000;
   border-radius: 8px;

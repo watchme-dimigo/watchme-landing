@@ -68,23 +68,9 @@ export default {
 .content {
   margin-left: 2.5em;
   margin-top: 4em;
-}
 
-.header {
-  &__title {
-    color: #000;
-    font-size: 3em;
-    font-weight: bold;
-    line-height: 1;
-    padding-bottom: 0.2em;
-    border-bottom: 2px solid #000;
-    width: 800px;
-    font-family: 'Montserrat', sans-serif;
-  }
-
-  &__desc {
-    font-size: 1.5em;
-    margin-top: 0.5em;
+  @media (max-width: 720px) {
+    margin-left: 0.5em;
   }
 }
 
@@ -95,7 +81,6 @@ export default {
 .member {
   display: flex;
   align-items: center;
-  // justify-content: center;
 
   &__profile-wrap {
     margin-left: 2.5em;
@@ -105,7 +90,6 @@ export default {
   &__profile {
     width: 8vw;
     height: 8vw;
-    // border: 1px solid lightgray;
     border-radius: 50%;
     box-shadow: 15px 19px 32px -18px rgba(21, 19, 19, 0.2);
   }
@@ -125,6 +109,43 @@ export default {
   &__part {
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 100;
+  }
+
+  @media (max-width: 1000px) {
+    &__profile-wrap {
+      margin-left: 1em;
+      margin-bottom: 1.2em;
+    }
+
+    &__profile {
+      width: 12vw;
+      height: 12vw;
+    }
+  }
+
+  @media (max-width: 700px) {
+    &__profile-wrap {
+      margin-left: 0;
+      margin-bottom: 1.2em;
+    }
+
+    &__profile {
+      width: 18vw;
+      height: 18vw;
+    }
+
+    &__name,
+    &__part {
+      margin-left: 1rem;
+    }
+
+    &__name {
+      font-size: 1.2em;
+    }
+
+    &__part {
+      font-size: 1em;
+    }
   }
 }
 
