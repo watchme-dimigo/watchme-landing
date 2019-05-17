@@ -36,11 +36,11 @@ export default {
           :key="idx"
         >
           <div class="member__profile-wrap">
-            <img class="member__profile" :src="require('../assets/profile/3.jpg')"/>
+            <img class="member__profile" :src="require(`../assets/profile/${user.name[1]}.jpg`)"/>
           </div>
           <div class="member__content">
             <div class="member__name">
-              {{ user.name }}
+              {{ user.name[0] }}
               <i
                 class="fab fa-facebook-square"
                 v-if="user.facebook"
@@ -104,6 +104,7 @@ export default {
 
   &__profile {
     width: 8vw;
+    height: 8vw;
     // border: 1px solid lightgray;
     border-radius: 50%;
     box-shadow: 15px 19px 32px -18px rgba(21, 19, 19, 0.2);

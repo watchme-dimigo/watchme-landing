@@ -1,24 +1,24 @@
 [
   {
-    "name": "Hangyeong Kim",
+    "name": ["Hangyeong Kim", "김한경"],
     "part": "UI/UX Design",
     "facebook": "https://www.facebook.com/profile.php?id=100024992557775"
   },
   {
-    "name": "Jaeseong Sim",
+    "name": ["Jaeseong Sim", "심재성"],
     "part": "Desktop Client",
     "github": "https://github.com/Jaeseong-CS",
     "facebook": "https://www.facebook.com/profile.php?id=100027493278652"
   },
   {
-    "name": "Junho Yeo",
+    "name": ["Junho Yeo", "여준호"],
     "part": "AI, OpenCV",
     "github": "https://github.com/junhoyeo",
     "facebook": "https://www.facebook.com/juno3704"
   },
   {
-    "name": "Yeongchang Yun",
-    "part": "Server BackEnd",
+    "name": ["Yeongchang Yun", "윤영창"],
+    "part": "BackEnd Server",
     "image": "../assets/profile/3.jpg",
     "github": "https://github.com/YunYeongChang",
     "facebook": "https://www.facebook.com/YeongChang0602"

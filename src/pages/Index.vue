@@ -5,6 +5,9 @@ export default {
   methods: {
     isWindows () {
       return window.navigator.appVersion.indexOf('Win') !== -1
+    },
+    download (platform) {
+      this.$swal('이런!', '준비중입니다.', 'error')
     }
   }
 }
@@ -26,12 +29,14 @@ export default {
           <div
             class="button download-windows"
             :class="{ selected: this.isWindows() }"
+            @click="download('win')"
           >
             <i class="fab fa-windows"></i> Windows
           </div>
           <div
             class="button download-mac"
             :class="{ selected: !this.isWindows() }"
+            @click="download('mac')"
           >
             <i class="fab fa-apple"></i> Mac OS X
           </div>
