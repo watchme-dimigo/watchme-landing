@@ -11,7 +11,7 @@ export default {
   data () {
     return {
       options: {
-        anchors: ['page1', 'page2']
+        anchors: ['downloads', 'team']
       }
     }
   }

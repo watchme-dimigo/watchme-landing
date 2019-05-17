@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Hangyeong Kim",
+    "part": "UI/UX Design",
+    "facebook": "https://www.facebook.com/profile.php?id=100024992557775"
+  },
+  {
+    "name": "Jaeseong Sim",
+    "part": "Desktop Client",
+    "github": "https://github.com/Jaeseong-CS",
+    "facebook": "https://www.facebook.com/profile.php?id=100027493278652"
+  },
+  {
+    "name": "Junho Yeo",
+    "part": "AI, OpenCV",
+    "github": "https://github.com/junhoyeo",
+    "facebook": "https://www.facebook.com/juno3704"
+  },
+  {
+    "name": "Yeongchang Yun",
+    "part": "Server BackEnd",
+    "image": "../assets/profile/3.jpg",
+    "github": "https://github.com/YunYeongChang",
+    "facebook": "https://www.facebook.com/YeongChang0602"
+  }
+]

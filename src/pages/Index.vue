@@ -14,8 +14,10 @@ export default {
   <div class="section">
     <div class="content">
       <div class="left">
-        <h1 class="left__title">WATCHME</h1>
-        <p class="left__desc">당신의 생산성을 높이기 위해</p>
+        <div class="header">
+          <h1 class="header__title">WATCHME</h1>
+          <p class="header__desc">당신의 생산성을 높이기 위해</p>
+        </div>
         <div class="buttons">
           <p class="buttons__desc">
             <span class="buttons__desc-strong">다운로드</span>
@@ -31,7 +33,7 @@ export default {
             class="button download-mac"
             :class="{ selected: !this.isWindows() }"
           >
-            <i class="fab fa-windows"></i> Mac OS X
+            <i class="fab fa-apple"></i> Mac OS X
           </div>
           <p class="buttons__desc github">
             <span class="buttons__desc-strong">개발</span>
@@ -52,9 +54,14 @@ export default {
 @import '../scss/section.scss';
 
 .left {
+  height: 100%;
+  flex: 1;
+  position: relative;
   margin-left: 2.5em;
   margin-top: 4em;
+}
 
+.header {
   &__title {
     color: #000;
     font-size: 4.2em;
@@ -69,11 +76,12 @@ export default {
   &__desc {
     font-size: 1.5em;
     margin-top: 0.5em;
-    margin-bottom: 3.3em;
   }
 }
 
 .buttons {
+  position: absolute;
+  bottom: 5em;
   width: 40%; // crashes under width 1120px
   font-size: 1.5em;
 

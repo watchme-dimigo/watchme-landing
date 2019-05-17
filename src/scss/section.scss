@@ -1,5 +1,10 @@
+.section, .content {
+  height: 100%;
+}
+
 .section * {
   user-select: none;
+  -webkit-user-drag: none;
 }
 
 h1,
@@ -8,18 +13,20 @@ p {
 }
 
 .button {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 150px;
   padding: 0.5em;
   border: 1.5px solid #000;
   border-radius: 8px;
-  // margin-right: 0.5em;
   cursor: pointer;
   text-align: center;
   user-select: none;
 
-  &__text {
-    vertical-align: middle;
+  i {
+    margin-right: 0.5em;
   }
 }
 
