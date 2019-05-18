@@ -31,8 +31,8 @@ export default {
 
 .content {
   position: relative;
-  margin-left: 2.5em;
   margin-top: 4em;
+  margin-left: 2.5em;
 
   @media (max-width: 720px) {
     margin-left: 0.5em;
@@ -44,17 +44,17 @@ export default {
     font-size: 3.5em;
 
     @media (max-width: 790px) {
-      word-spacing: 150vw;
       font-size: 2.5em;
+      word-spacing: 150vw;
     }
   }
 }
 
 .illust {
-  top: 100px;
   position: absolute;
-  right: 0;
   z-index: -1;
+  top: 100px;
+  right: 0;
 
   @media (max-width: 500px) {
     right: -50px;

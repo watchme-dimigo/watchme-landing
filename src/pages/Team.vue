@@ -66,8 +66,8 @@ export default {
 @import '../scss/section.scss';
 
 .content {
-  margin-left: 2.5em;
   margin-top: 4em;
+  margin-left: 2.5em;
 
   @media (max-width: 720px) {
     margin-left: 0.5em;
@@ -83,8 +83,8 @@ export default {
   align-items: center;
 
   &__profile-wrap {
-    margin-left: 2.5em;
     margin-bottom: 1.5em;
+    margin-left: 2.5em;
   }
 
   &__profile {
@@ -101,9 +101,9 @@ export default {
   }
 
   &__name {
-    text-transform: uppercase;
-    font-weight: 800;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
   }
 
   &__part {
@@ -113,8 +113,8 @@ export default {
 
   @media (max-width: 1000px) {
     &__profile-wrap {
-      margin-left: 1em;
       margin-bottom: 1.2em;
+      margin-left: 1em;
     }
 
     &__profile {
@@ -125,8 +125,8 @@ export default {
 
   @media (max-width: 700px) {
     &__profile-wrap {
-      margin-left: 0;
       margin-bottom: 1.2em;
+      margin-left: 0;
     }
 
     &__profile {
@@ -150,13 +150,13 @@ export default {
 }
 
 .fab {
-  color: #000;
   margin-right: 0.2em;
+  color: #000;
   cursor: pointer;
 }
 
 .fa-facebook-square:hover {
-  color: #3C5A99;
+  color: #3c5a99;
 }
 
 .fa-github-square:hover {

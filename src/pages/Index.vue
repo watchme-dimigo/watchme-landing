@@ -59,11 +59,11 @@ export default {
 @import '../scss/section.scss';
 
 .left {
+  position: relative;
   height: 100%;
   flex: 1;
-  position: relative;
-  margin-left: 2.5em;
   margin-top: 4em;
+  margin-left: 2.5em;
 
   @media (max-width: 720px) {
     margin-left: 0.5em;
@@ -103,29 +103,29 @@ export default {
   }
 
   &__desc-strong {
-    font-weight: 400;
     margin-right: 0.5em;
+    font-weight: 400;
   }
 
   &__desc {
-    font-weight: 100;
     margin-bottom: 0.5em;
+    font-weight: 100;
   }
 
   &__desc.github {
-    margin-top: 0.8em;
     display: inline-block;
+    margin-top: 0.8em;
   }
 }
 
 .button {
-  font-size: 1.5rem;
   width: 45%;
+  font-size: 1.5rem;
 
   @media (max-width: 600px) {
+    width: 200px !important;
     margin: auto;
     margin-bottom: 0.2em;
-    width: 200px !important;
     float: unset !important;
     font-size: 1.2rem;
   }
@@ -145,8 +145,8 @@ export default {
 }
 
 .github {
-  color: #b4b4b4;
   border-color: #b4b4b4;
+  color: #b4b4b4;
   cursor: not-allowed;
 }
 </style>
