@@ -23,7 +23,10 @@ export default {
       <div class="left">
         <div class="header">
           <h1 class="header__title">WATCHME</h1>
-          <p class="header__desc">당신의 생산성을 높이기 위해</p>
+          <p class="header__desc">당신의 생산성을 높이는.</p>
+        </div>
+        <div class="demo">
+          <img class="demo__img" :src="require('../assets/mockups/main.png')">
         </div>
         <div class="buttons">
           <p class="buttons__desc">
@@ -68,11 +71,11 @@ export default {
 }
 
 .illust {
-  height: 100%;
   position: absolute;
   z-index: -1;
   top: 0;
   right: 0;
+  height: 100%;
 
   @media (max-width: 600px) {
     right: -300px;
@@ -92,7 +95,8 @@ export default {
 
 .buttons {
   position: absolute;
-  bottom: 5em;
+  // bottom: 5em;
+  bottom: 3.5rem;
   width: 40%; // crashes under width 1390px
   font-size: 1.5em;
 
@@ -118,6 +122,7 @@ export default {
   }
 
   @media (max-width: 600px) {
+    bottom: 1em;
     width: 100%;
     margin-left: 0.5em;
   }
@@ -169,4 +174,34 @@ export default {
 //   color: #b4b4b4;
 //   cursor: not-allowed;
 // }
+
+.demo {
+  margin-top: 3.5em;
+
+  &__img {
+    width: 30vw;
+    box-shadow: 0 0 32px -10px rgba(0, 0, 0, 0.445);
+
+    @media (max-width: 1200px) {
+      width: 40vw;
+    }
+
+    @media (max-width: 900px) {
+      width: 55vw;
+    }
+
+    @media (max-width: 720px) {
+      margin-left: 0.5em;
+    }
+
+    @media (max-width: 700px) {
+      width: 60vw;
+    }
+
+    @media (max-width: 500px) {
+      // margin-top: 1.5em;
+      width: 75vw;
+    }
+  }
+}
 </style>

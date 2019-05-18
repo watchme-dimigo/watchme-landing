@@ -71,11 +71,11 @@ export default {
 }
 
 .illust {
-  height: 80%;
   position: absolute;
   z-index: -1;
-  bottom: -5px;
   right: 0;
+  bottom: -5px;
+  height: 80%;
 
   @media (max-width: 600px) {
     right: -300px;

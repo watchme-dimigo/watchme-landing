@@ -31,9 +31,11 @@ export default {
           <div class="demo__intro">
             <img class="demo__model" :src="require('../assets/illust/model.png')">
             <ul>
-              <li><a href="">Haar-cascade classifier</a>로 사용자의 눈을 찾고,</li>
+              <li><a href="https://github.com/voidstellar/haar-cascade-files/blob/master/haarcascade_eye.xml" target="_blank">
+                Haar-cascade classifier</a>로 사용자의 눈을 찾고,
+              </li>
               <li>
-                <span class="small">(간단한 전처리 뒤)</span>&nbsp;<strong>keras</strong>를 사용해서 만든 CNN 모델을 이용해서 바라보는 위치를 구함
+                <span class="small">(간단한 전처리 뒤)</span>&nbsp;<strong>keras</strong>를 사용해서 만든 CNN 모델을 이용해서 바라보는 위치를 구합니다.
               </li>
             </ul>
           </div>
@@ -81,11 +83,17 @@ export default {
   }
 }
 
+.illust.base {
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+}
+
 .illust.track-left {
-  top: 0;
+  top: unset;
   right: unset;
+  bottom: 0.5em;
   left: 0;
-  height: 80vh;
+  height: 90%;
 }
 
 .demo {
@@ -93,6 +101,7 @@ export default {
   align-items: center;
   margin-top: 2.5em;
   justify-items: center;
+  word-break: keep-all;
 
   &__left,
   &__right {
@@ -114,22 +123,11 @@ export default {
   &__model {
     width: 30vw;
     margin: 0.3em;
-    box-shadow: -1px 5px 32px -18px rgba(21, 19, 19, 0.2);
+    box-shadow: 0 0 32px -10px rgba(0, 0, 0, 0.445);
   }
 
   .small {
     font-size: 0.6em;
-  }
-
-  a {
-    color: rgb(12, 12, 90);
-    font-weight: 300;
-    text-decoration: none;
-  }
-
-  a:hover,
-  a:active {
-    color: rgb(42, 29, 158);
   }
 
   strong {

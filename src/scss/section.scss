@@ -14,7 +14,7 @@ p {
 }
 
 .header {
-  padding-top: 4em;
+  padding-top: 3em;
 
   &__title {
     width: 800px;
@@ -34,6 +34,8 @@ p {
   }
 
   @media (max-width: 500px) {
+    padding-top: 1.2em;
+
     &__title {
       margin-left: 0.3rem;
       font-size: 3em;
@@ -48,12 +50,12 @@ p {
 
 .button {
   display: flex;
-
   width: 150px;
   align-items: center;
   justify-content: center;
   padding: 0.5em;
   border: 1.5px solid #000;
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 8px;
   cursor: pointer;
   text-align: center;
@@ -67,4 +69,16 @@ p {
 .button.selected {
   background-color: #000;
   color: #fff;
+}
+
+a {
+  color: rgb(12, 12, 90);
+  font-weight: 300;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: rgb(42, 29, 158);
+  text-decoration: underline;
 }
