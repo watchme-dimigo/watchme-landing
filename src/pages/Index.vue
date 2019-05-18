@@ -8,6 +8,9 @@ export default {
     },
     download (platform) {
       this.$swal('이런!', '준비중입니다.', 'error')
+    },
+    moveTo (url) {
+      if (url) window.open(url, '_blank').focus()
     }
   }
 }
@@ -15,6 +18,7 @@ export default {
 
 <template>
   <div class="section">
+    <img class="illust" :src="require('../assets/illust/main.png')">
     <div class="content">
       <div class="left">
         <div class="header">
@@ -46,6 +50,7 @@ export default {
           </p>
           <div
             class="button github"
+            @click="moveTo('https://github.com/watchme-dimigo')"
           >
             <i class="fab fa-github"></i> Github
           </div>
@@ -58,11 +63,26 @@ export default {
 <style lang="scss" scoped>
 @import '../scss/section.scss';
 
+.section {
+  position: relative;
+}
+
+.illust {
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+
+  @media (max-width: 600px) {
+    right: -300px;
+  }
+}
+
 .left {
   position: relative;
   height: 100%;
   flex: 1;
-  margin-top: 4em;
   margin-left: 2.5em;
 
   @media (max-width: 720px) {
@@ -144,9 +164,9 @@ export default {
   width: -webkit-fill-available;
 }
 
-.github {
-  border-color: #b4b4b4;
-  color: #b4b4b4;
-  cursor: not-allowed;
-}
+// .github {
+//   border-color: #b4b4b4;
+//   color: #b4b4b4;
+//   cursor: not-allowed;
+// }
 </style>
