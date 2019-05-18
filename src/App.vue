@@ -2,6 +2,7 @@
 import Index from './pages/Index'
 import ClosedEye from './pages/ClosedEye'
 import PupilTrack from './pages/PupilTrack'
+import Programs from './pages/Programs'
 import Team from './pages/Team'
 
 export default {
@@ -10,12 +11,13 @@ export default {
     Index,
     ClosedEye,
     PupilTrack,
+    Programs,
     Team
   },
   data () {
     return {
       options: {
-        anchors: ['downloads', 'tech1', 'tech2', 'team']
+        anchors: ['downloads', 'tech1', 'tech2', 'tech3', 'team']
       }
     }
   }
@@ -28,6 +30,7 @@ export default {
       <Index />
       <ClosedEye />
       <PupilTrack />
+      <Programs />
       <Team />
     </full-page>
   </div>

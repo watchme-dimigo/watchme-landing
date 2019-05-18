@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'ClosedEye',
+  name: 'Programs',
 
   methods: {
     moveTo (url) {
@@ -15,15 +15,11 @@ export default {
     <div class="content">
       <div class="header">
         <div class="header__title">
-          Closed Eye Detection
+          Running Programs
         </div>
         <div class="header__desc">
-          사용자가 눈을 감고 있는지를 인식합니다.
+          현재 실행되는 프로그램들을 모니터링합니다.
         </div>
-      </div>
-      <img class="illust" :src="require('../assets/illust/closed-eye.png')" />
-      <div class="demo">
-        <img :src="require('../assets/demo/alarm.png')">
       </div>
     </div>
   </div>
@@ -51,20 +47,5 @@ export default {
       word-spacing: 150vw;
     }
   }
-}
-
-.illust {
-  position: absolute;
-  z-index: -1;
-  top: 100px;
-  right: 0;
-
-  @media (max-width: 500px) {
-    right: -50px;
-  }
-}
-
-.demo {
-  margin-top: 2.5em;
 }
 </style>

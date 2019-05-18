@@ -20,6 +20,7 @@ export default {
 
 <template>
   <div class="section">
+    <img class="illust" :src="require('../assets/illust/team.png')">
     <div class="content">
       <div class="header">
         <div class="header__title">
@@ -64,6 +65,22 @@ export default {
 
 <style lang="scss" scoped>
 @import '../scss/section.scss';
+
+.section {
+  position: relative;
+}
+
+.illust {
+  height: 80%;
+  position: absolute;
+  z-index: -1;
+  bottom: -5px;
+  right: 0;
+
+  @media (max-width: 600px) {
+    right: -300px;
+  }
+}
 
 .content {
   margin-top: 4em;
